@@ -1,0 +1,172 @@
+/* =======================
+   CONFIGURATION GÉNÉRALE
+======================= */
+
+@page {
+    size: A4;
+    margin: 15mm;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* =======================
+   CONTENEUR PRINCIPAL A4
+======================= */
+
+.cv-container {
+    display: flex;
+    width: 210mm;       /* largeur A4 */
+    min-height: 297mm;  /* hauteur A4 */
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* =======================
+   COLONNE GAUCHE
+======================= */
+
+.left-column {
+    width: 30%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.left-column h2 {
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    margin-top: 25px;
+	color: #fff;
+}
+
+.left-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-column li {
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+.left-column a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.left-column a:hover {
+    text-decoration: underline;
+}
+
+/* =======================
+   PHOTO DE PROFIL
+======================= */
+
+.profile-pic {
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+
+/* =======================
+   COLONNE DROITE
+======================= */
+
+.right-column {
+    width: 70%;
+    padding: 25px;
+}
+
+/* =======================
+   EN-TÊTE
+======================= */
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+header h3 {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.profile {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+/* =======================
+   SECTIONS
+======================= */
+
+section {
+    margin-top: 25px;
+    page-break-inside: avoid;
+}
+
+section h2 {
+    font-size: 16px;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* =======================
+   ITEMS (EXP / FORMATION)
+======================= */
+
+.item {
+    margin-bottom: 15px;
+    page-break-inside: avoid;
+}
+
+.item h4 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.item span {
+    font-size: 11px;
+    color: #777;
+}
+
+.item ul {
+    margin: 5px 0 0 15px;
+    padding: 0;
+}
+
+.item li {
+    font-size: 12px;
+}
+
+/* =======================
+   MODE IMPRESSION / PDF
+======================= */
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cv-container {
+        box-shadow: none;
+    }
+}
