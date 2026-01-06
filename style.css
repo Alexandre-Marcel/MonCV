@@ -1,6 +1,3 @@
-/* =======================
-   CONFIGURATION GÉNÉRALE
-======================= */
 
 @page {
     size: A4;
@@ -15,9 +12,6 @@ body {
     font-size: 12px;
 }
 
-/* =======================
-   CONTENEUR PRINCIPAL A4
-======================= */
 
 .cv-container {
     display: flex;
@@ -28,9 +22,6 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* =======================
-   COLONNE GAUCHE
-======================= */
 
 .left-column {
     width: 30%;
@@ -67,9 +58,6 @@ body {
     text-decoration: underline;
 }
 
-/* =======================
-   PHOTO DE PROFIL
-======================= */
 
 .profile-pic {
     width: 140px;
@@ -80,18 +68,23 @@ body {
 }
 
 
-/* =======================
-   COLONNE DROITE
-======================= */
-
 .right-column {
     width: 70%;
     padding: 25px;
 }
 
-/* =======================
-   EN-TÊTE
-======================= */
+
+.print-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 12px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 header h1 {
     margin: 0;
@@ -110,10 +103,6 @@ header h3 {
     font-size: 12px;
 }
 
-/* =======================
-   SECTIONS
-======================= */
-
 section {
     margin-top: 25px;
     page-break-inside: avoid;
@@ -127,9 +116,6 @@ section h2 {
     margin-bottom: 15px;
 }
 
-/* =======================
-   ITEMS (EXP / FORMATION)
-======================= */
 
 .item {
     margin-bottom: 15px;
@@ -155,10 +141,6 @@ section h2 {
     font-size: 12px;
 }
 
-/* =======================
-   MODE IMPRESSION / PDF
-======================= */
-
 @media print {
     body {
         background: white;
@@ -169,4 +151,9 @@ section h2 {
     .cv-container {
         box-shadow: none;
     }
+	.print-btn {
+        display: none;
+    }
 }
+
+
