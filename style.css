@@ -156,4 +156,27 @@ section h2 {
     }
 }
 
+.lang-switch {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lang-switch button {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
+}
+
+@media print {
+    .lang-switch {
+        display: none;
+    }
+}
+
+
 

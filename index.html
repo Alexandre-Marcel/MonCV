@@ -7,6 +7,12 @@
 </head>
 <body>
 
+<!-- BOUTON LANGUE -->
+<div class="lang-switch">
+    <button onclick="setLanguage('fr')">🇫🇷 Français</button>
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+</div>
+
 <div class="cv-container">
 
     <!-- COLONNE GAUCHE -->
@@ -14,26 +20,21 @@
         <img src="img/cv photo.jpg" alt="Photo Alexandre Marcel" class="profile-pic">
 
         <section>
-            <h2>Contact</h2>
-            <p>📍 Beloeil, Belgique</p>
+            <h2 data-fr="Contact" data-en="Contact">Contact</h2>
+            <p data-fr="📍 Beloeil, Belgique" data-en="📍 Beloeil, Belgium">📍 Beloeil, Belgique</p>
             <p>📞 0491 36 58 06</p>
             <p>
-				✉️ 
-				<a href="mailto:alexandre2002marcel@gmail.com">
-					alexandre2002marcel@gmail.com
-				</a>
-			</p>
-
-			<p>
-				💼 
-				<a href="https://www.linkedin.com/in/alexandre-marcel-7587502b2/" target="_blank">
-					LinkedIn : Alexandre Marcel
-				</a>
-			</p>
+                ✉️ <a href="mailto:alexandre2002marcel@gmail.com">alexandre2002marcel@gmail.com</a>
+            </p>
+            <p>
+                💼 <a href="https://www.linkedin.com/in/alexandre-marcel-7587502b2/" target="_blank">
+                    LinkedIn : Alexandre Marcel
+                </a>
+            </p>
         </section>
 
         <section>
-            <h2>Compétences techniques</h2>
+            <h2 data-fr="Compétences techniques" data-en="Technical skills">Compétences techniques</h2>
             <ul>
                 <li>PHP (Laravel)</li>
                 <li>Python</li>
@@ -47,28 +48,31 @@
         </section>
 
         <section>
-            <h2>Soft Skills</h2>
+            <h2 data-fr="Soft Skills" data-en="Soft skills">Soft Skills</h2>
             <ul>
-                <li>Esprit d’équipe</li>
-                <li>Autonomie</li>
-                <li>Organisation</li>
-                <li>Communication</li>
-                <li>Capacité d’adaptation</li>
-                <li>Leadership</li>
-            </ul>
-        </section>
-		
-		<section>
-            <h2>Langues</h2>
-            <ul>
-                <li>Français — Langue maternelle</li>
-                <li>Anglais — conversationnel</li>
+                <li data-fr="Esprit d’équipe" data-en="Team spirit">Esprit d’équipe</li>
+                <li data-fr="Autonomie" data-en="Autonomy">Autonomie</li>
+                <li data-fr="Organisation" data-en="Organization">Organisation</li>
+                <li data-fr="Communication" data-en="Communication">Communication</li>
+                <li data-fr="Capacité d’adaptation" data-en="Adaptability">Capacité d’adaptation</li>
+                <li data-fr="Leadership" data-en="Leadership">Leadership</li>
             </ul>
         </section>
 
         <section>
-            <h2>Permis</h2>
-            <p>Permis B – Véhicule personnel</p>
+            <h2 data-fr="Langues" data-en="Languages">Langues</h2>
+            <ul>
+                <li data-fr="Français — langue maternelle" data-en="French — native">Français — langue maternelle</li>
+                <li data-fr="Anglais — conversationnel" data-en="English — conversational">Anglais — conversationnel</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 data-fr="Permis" data-en="Driving licence">Permis</h2>
+            <p data-fr="Permis B – Véhicule personnel"
+               data-en="Driving licence B – Own vehicle">
+               Permis B – Véhicule personnel
+            </p>
         </section>
     </aside>
 
@@ -76,86 +80,179 @@
     <main class="right-column">
         <header>
             <h1>Alexandre Marcel</h1>
-            <h3>Développeur / Informaticien</h3>
-            <p class="profile">
-                Jeune développeur passionné par l’informatique et le développement web,
-                disposant d’une solide formation technique et d’une expérience concrète
-                en entreprise. Motivé, curieux et orienté solutions.
+            <h3 data-fr="Développeur / Informaticien"
+                data-en="Developer / IT specialist">
+                Développeur / Informaticien
+            </h3>
+            <p class="profile"
+               data-fr="Jeune développeur passionné par l’informatique et le développement web, disposant d’une solide formation technique et d’une expérience concrète en entreprise."
+               data-en="Young developer passionate about IT and web development, with solid technical training and real professional experience.">
+               Jeune développeur passionné par l’informatique et le développement web,
+               disposant d’une solide formation technique et d’une expérience concrète
+               en entreprise.
             </p>
         </header>
 
         <section>
-            <h2>Expériences professionnelles</h2>
+            <h2 data-fr="Expériences professionnelles"
+                data-en="Professional experience">
+                Expériences professionnelles
+            </h2>
 
             <div class="item">
-                <h4><b>Développeur Web – Zeus Computer (Mons)</b></h4>
-                <span>2025 – Stage</span>
+                <h4 data-fr="Développeur Web – Zeus Computer (Mons)"
+                    data-en="Web Developer – Zeus Computer (Mons)">
+                    <b>Développeur Web – Zeus Computer (Mons)</b>
+                </h4>
+                <span data-fr="2025 – Stage" data-en="2025 – Internship">2025 – Stage</span>
                 <ul>
-                    <li>Développement de 2 applications web de facturation</li>
-                    <li>Framework PHP Laravel</li>
-                    <li>Travail en autonomie et en collaboration</li>
+                    <li data-fr="Développement de 2 applications web de facturation"
+                        data-en="Development of 2 web-based invoicing applications">
+                        Développement de 2 applications web de facturation
+                    </li>
+                    <li data-fr="Framework PHP Laravel"
+                        data-en="PHP Laravel framework">
+                        Framework PHP Laravel
+                    </li>
+                    <li data-fr="Travail en autonomie et en collaboration"
+                        data-en="Independent and collaborative work">
+                        Travail en autonomie et en collaboration
+                    </li>
                 </ul>
             </div>
 
             <div class="item">
-                <h4>Commis de salle – Pairi Daiza (Cambron-Casteau)</h4>
+                <h4 data-fr="Commis de salle – Pairi Daiza (Cambron-Casteau)"
+                    data-en="Waiter – Pairi Daiza (Cambron-Casteau)">
+                    Commis de salle – Pairi Daiza (Cambron-Casteau)
+                </h4>
                 <span>2021 – 2025</span>
             </div>
 
             <div class="item">
-                <h4>Responsable de rayon – Station Total (Hellebecq)</h4>
+                <h4 data-fr="Responsable de rayon – Station Total (Hellebecq)"
+                    data-en="Department supervisor – Total station (Hellebecq)">
+                    Responsable de rayon – Station Total (Hellebecq)
+                </h4>
                 <span>2021</span>
             </div>
 
             <div class="item">
-                <h4>Commis de salle – La Chamarrée (Moulbaix)</h4>
+                <h4 data-fr="Commis de salle – La Chamarrée (Moulbaix)"
+                    data-en="Waiter – La Chamarrée (Moulbaix)">
+                    Commis de salle – La Chamarrée (Moulbaix)
+                </h4>
                 <span>2017 – 2019</span>
             </div>
         </section>
 
         <section>
-            <h2>Formation</h2>
+			<h2 data-fr="Formation" data-en="Education">Formation</h2>
 
-            <div class="item">
-                <h4><b>Bachelier en Informatique – HEH</b></h4>
-                <span>2022 – 2025</span>
-                <p>Orientation Réseaux & Télécommunications – Option Développement</p>
-            </div>
+			<div class="item">
+				<h4 data-fr="Bachelier en Informatique – HEH"
+					data-en="Bachelor in Computer Science – HEH">
+					<b>Bachelier en Informatique – HEH</b>
+				</h4>
+				<span>2022 – 2025</span>
+				<p data-fr="Orientation Réseaux & Télécommunications – Option Développement"
+				   data-en="Networks & Telecommunications – Development option">
+				   Orientation Réseaux & Télécommunications – Option Développement
+				</p>
+			</div>
 
-            <div class="item">
-                <h4>Informatique – UMONS</h4>
-                <span>2021 – 2022</span>
-            </div>
+			<div class="item">
+				<h4 data-fr="Informatique – UMONS"
+					data-en="Computer Science – UMONS">
+					Informatique – UMONS
+				</h4>
+				<span>2021 – 2022</span>
+			</div>
 
-            <div class="item">
-                <h4>CESS – IPES d’Ath</h4>
-                <span>2016 – 2021</span>
-                <p>Technique de transition – Option Informatique</p>
-            </div>
+			<div class="item">
+				<h4 data-fr="CESS – IPES d’Ath"
+					data-en="Secondary school diploma – IPES d’Ath">
+					CESS – IPES d’Ath
+				</h4>
+				<span>2016 – 2021</span>
+				<p data-fr="Technique de transition – Option Informatique"
+				   data-en="Technical transition – IT option">
+				   Technique de transition – Option Informatique
+				</p>
+			</div>
 
-            <div class="item">
-                <h4>Formation Animateur de jeunesse</h4>
-                <span>2019 – 2022</span>
-            </div>
-        </section>
+			<div class="item">
+				<h4 data-fr="Formation Animateur de jeunesse"
+					data-en="Youth activity leader training">
+					Formation Animateur de jeunesse
+				</h4>
+				<span>2019 – 2022</span>
+			</div>
+		</section>
+
 
         <section>
-            <h2>Centres d’intérêt & Engagement</h2>
-            <ul>
-                <li>Animateur Patro (2019–2024)</li>
-                <li>Chef de section (2020–2024)</li>
-                <li>Membre régional Patros d’Ath (2021–2022)</li>
-                <li>Formateur régional depuis 2022</li>
-                <li>Jeux vidéo & TCG</li>
-                <li>Animateur de lives Twitch</li>
-            </ul>
-        </section>
-		<button class="print-btn" onclick="window.print()">
+			<h2 data-fr="Centres d’intérêt & Engagement"
+				data-en="Interests & Activities">
+				Centres d’intérêt & Engagement
+			</h2>
+
+			<ul>
+				<li data-fr="Animateur Patro (2019–2024)"
+					data-en="Youth leader (Patro) (2019–2024)">
+					Animateur Patro (2019–2024)
+				</li>
+
+				<li data-fr="Chef de section (2020–2024)"
+					data-en="Section leader (2020–2024)">
+					Chef de section (2020–2024)
+				</li>
+
+				<li data-fr="Membre régional des Patros d’Ath (2021–2022)"
+					data-en="Regional member of Patros d’Ath (2021–2022)">
+					Membre régional des Patros d’Ath (2021–2022)
+				</li>
+
+				<li data-fr="Formateur régional depuis 2022"
+					data-en="Regional trainer since 2022">
+					Formateur régional depuis 2022
+				</li>
+
+				<li data-fr="Jeux vidéo & TCG"
+					data-en="Video games & TCG">
+					Jeux vidéo & TCG
+				</li>
+
+				<li data-fr="Modélisme de figurines"
+					data-en="Miniature modeling & painting">
+					Modélisme de figurines
+				</li>
+
+				<li data-fr="Animateur de lives Twitch"
+					data-en="Twitch live streamer">
+					Animateur de lives Twitch
+				</li>
+			</ul>
+		</section>
+
+
+        <button class="print-btn" onclick="window.print()"
+                data-fr="Télécharger le CV en PDF"
+                data-en="Download CV as PDF">
             Télécharger le CV en PDF
         </button>
     </main>
-
 </div>
+
+<!-- SCRIPT LANGUE -->
+<script>
+function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-fr]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+    });
+}
+</script>
 
 </body>
 </html>
